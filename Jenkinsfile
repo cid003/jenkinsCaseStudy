@@ -1,12 +1,9 @@
 pipeline {
     agent any
-    tools {
-        maven 'M3'
-    }
     stages {
         stage('Test') {
             steps {
-                withMaven {
+                withMaven(maven: 'M3') {
                     sh "mvn test"
                 }
             }
