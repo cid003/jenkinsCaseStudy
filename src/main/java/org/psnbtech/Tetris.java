@@ -117,7 +117,7 @@ public class Tetris extends JFrame {
 	 * Creates a new Tetris instance. Sets up the window's properties,
 	 * and adds a controller listener.
 	 */
-	private Tetris() {
+	public Tetris() {
 		/*
 		 * Set the basic properties of the window.
 		 */
@@ -400,7 +400,7 @@ public class Tetris extends JFrame {
 	 * Spawns a new piece and resets our piece's variables to their default
 	 * values.
 	 */
-	private void spawnPiece() {
+	public void spawnPiece() {
 		/*
 		 * Poll the last piece and reset our position and rotation to
 		 * their default variables, then pick the next piece to use.
