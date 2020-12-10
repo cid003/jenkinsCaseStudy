@@ -1,8 +1,11 @@
 pipeline {
     agent any
-
+    
+    tools {
+        maven "M3"
+    }
     stages {
-        stage('Hello') {
+        stage('Test') {
             steps {
                 sh 'mvn test'
             }
