@@ -80,12 +80,12 @@ public class Tetris extends JFrame {
 	/**
 	 * The current type of tile.
 	 */
-	private TileType currentType;
+	public TileType currentType;
 	
 	/**
 	 * The next type of tile.
 	 */
-	private TileType nextType;
+	public TileType nextType;
 		
 	/**
 	 * The current column of our tile.
